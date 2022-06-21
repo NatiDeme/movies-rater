@@ -15,7 +15,7 @@
   \*****************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\n  box-sizing: border-box;\\n}\\n\\n:root {\\n  --bgdark: #fafafa;\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://movies-rater/./src/css/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\n  margin: 0;\\n  padding: 0;\\n  box-sizing: border-box;\\n}\\n\\n:root {\\n  --bgdark: #fafafa;\\n}\\n\\n.header-list {\\n  display: flex;\\n  justify-items: center;\\n  gap: 2.2rem;\\n  list-style: none;\\n  font-size: 1.3rem;\\n}\\n\\n.header-list a {\\n  text-decoration: none;\\n  color: black;\\n}\\n\\nnav {\\n  display: flex;\\n  align-items: center;\\n  padding-left: 15rem;\\n  box-shadow: 0 2px 10px grey;\\n  height: 4rem;\\n  gap: 2rem;\\n}\\n\\nfooter {\\n  display: flex;\\n  justify-content: center;\\n  padding-top: 1.2rem;\\n  border-top: 1px solid black;\\n}\\n\\n#logo {\\n  height: 2.5rem;\\n}\\n\\nol,\\nul {\\n  list-style-type: none;\\n}\\n\\n.d-flex {\\n  display: flex;\\n  flex-wrap: wrap;\\n}\\n\\n.mb-1 {\\n  margin-bottom: 1em;\\n}\\n\\n.mt-1 {\\n  margin-top: 2em;\\n}\\n\\n.space-between {\\n  justify-content: space-between;\\n}\\n\\n.space-around {\\n  justify-content: space-around;\\n}\\n\\n.space-evenly {\\n  justify-content: space-evenly;\\n}\\n\\n.btn {\\n  padding: 5px;\\n  width: 50%;\\n}\\n\\n@media screen and (min-width: 767px) {\\n  .container {\\n    width: 90%;\\n    margin: auto;\\n  }\\n\\n  .movies-list .movie-item {\\n    width: 20%;\\n  }\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://movies-rater/./src/css/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -115,7 +115,37 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n\n\n//# sourceURL=webpack://movies-rater/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _modules_header_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/header.js */ \"./src/modules/header.js\");\n/* harmony import */ var _modules_movies_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/movies.js */ \"./src/modules/movies.js\");\n\n\n\n\nconst movies = new _modules_movies_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]();\n\n(0,_modules_header_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\nmovies.displayMovies();\n\n\n//# sourceURL=webpack://movies-rater/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/header.js":
+/*!*******************************!*\
+  !*** ./src/modules/header.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _asset_tvmaze_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../asset/tvmaze.png */ \"./src/asset/tvmaze.png\");\n\n\nconst myImage = new Image();\nmyImage.src = _asset_tvmaze_png__WEBPACK_IMPORTED_MODULE_0__;\n\nconst header = () => {\n  const header = document.getElementById('nav');\n  header.innerHTML = `\n    <div><img src= ${_asset_tvmaze_png__WEBPACK_IMPORTED_MODULE_0__} alt=\"logo\" id=\"logo\"></div>\n    <ul class=\"header-list\">\n    <li><a href=\"#\">Home</a></li>\n    <li><a href=\"#\">Action</a></li>\n    <li><a href=\"#\">Comedy</a></li>\n</ul>\n    `;\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (header);\n\n//# sourceURL=webpack://movies-rater/./src/modules/header.js?");
+
+/***/ }),
+
+/***/ "./src/modules/movies.js":
+/*!*******************************!*\
+  !*** ./src/modules/movies.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nclass Movies {\n  constructor() {\n    this.API_BASE_URL = 'https://api.tvmaze.com/';\n    this.movies = [];\n  }\n\n  getMovieList = async (key) => {\n    const Query = `search/shows?q=${key}`;\n    const list = await fetch(`${this.API_BASE_URL}${Query}`).then((response) => response.json());\n    this.movies = [...this.movies, ...list];\n  }\n\n  displayMovies = async () => {\n    await this.getMovieList('girls');\n    await this.getMovieList('boys');\n    await this.getMovieList('cats');\n\n    const list = this.movies.reduce((prev, curr) => {\n      if (curr.show.image) {\n        prev += `\n        <div class=\"movie-item mb-1\">\n          <div>\n            <div class=\"d-flex space-around mb-1\">\n             <img src=${curr.show.image.medium} />\n            </div>\n            <div class=\"d-flex movie-content mb-1 space-evenly\">\n              <span>${curr.show.name}</span>\n              <span> <i class=\"fa fa-heart\" data-id=${curr.show.id}></i> 0Like(s)</span>\n            </div>\n            <div class=\"d-flex space-around mb-1\">\n              <button class=\"btn\" data-id=${curr.show.id}>Comments</button>\n            </div>\n          </div>\n        </div>\n        `;\n      }\n      return prev;\n    }, '');\n    document.querySelector('.movies-list').innerHTML = list;\n  }\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Movies);\n\n//# sourceURL=webpack://movies-rater/./src/modules/movies.js?");
+
+/***/ }),
+
+/***/ "./src/asset/tvmaze.png":
+/*!******************************!*\
+  !*** ./src/asset/tvmaze.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"99b4ccddf7755be7b4af.png\";\n\n//# sourceURL=webpack://movies-rater/./src/asset/tvmaze.png?");
 
 /***/ })
 
