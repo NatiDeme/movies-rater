@@ -52,7 +52,7 @@ class Movies {
             <div class="d-flex movie-content mb-1 space-evenly">
               <span>${curr.show.name}</span>
               <div> 
-               <i class="fa fa-heart" data-pos=${curr.show.id}></i> 
+               <i class="fa fa-heart fa-lg" data-pos=${curr.show.id}></i> 
                <span>${msgLikes}</span> Like(s)
               </div>
             </div>
