@@ -1,7 +1,88 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 :root {
   --bgdark: #fafafa;
+}
+
+.header-list {
+  display: flex;
+  justify-items: center;
+  gap: 2.2rem;
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+.header-list a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding-left: 15rem;
+  box-shadow: 0 2px 10px grey;
+  height: 4rem;
+  gap: 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.2rem;
+  border-top: 1px solid black;
+}
+
+#logo {
+  height: 2.5rem;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mt-1 {
+  margin-top: 2em;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.btn {
+  padding: 5px;
+  width: 50%;
+}
+
+@media screen and (min-width: 767px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .movies-list .movie-item {
+    width: 20%;
+  }
 }
