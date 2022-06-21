@@ -10,6 +10,7 @@
 
 .header-list {
   display: flex;
+  justify-items: center;
   gap: 2.2rem;
   list-style: none;
   font-size: 1.3rem;
@@ -24,8 +25,9 @@ nav {
   display: flex;
   align-items: center;
   padding-left: 15rem;
-  box-shadow: 0px 2px 10px grey;
+  box-shadow: 0 2px 10px grey;
   height: 4rem;
+  gap: 2rem;
 }
 
 main {
@@ -37,4 +39,8 @@ footer {
   justify-content: center;
   padding-top: 1.2rem;
   border-top: 1px solid black;
+}
+
+#logo {
+  height: 2.5rem;
 }
