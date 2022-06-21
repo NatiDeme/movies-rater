@@ -115,6 +115,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+<<<<<<< HEAD
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _modules_header_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/header.js */ \"./src/modules/header.js\");\n\n\n\n(0,_modules_header_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n\n//# sourceURL=webpack://movies-rater/./src/index.js?");
 
 /***/ }),
@@ -136,6 +137,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"99b4ccddf7755be7b4af.png\";\n\n//# sourceURL=webpack://movies-rater/./src/asset/tvmaze.png?");
+=======
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _modules_movies_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/movies.js */ \"./src/modules/movies.js\");\n\n\n\nconst movies = new _modules_movies_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\nmovies.displayMovies();\n\n//# sourceURL=webpack://movies-rater/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/movies.js":
+/*!*******************************!*\
+  !*** ./src/modules/movies.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nclass Movies {\n  constructor() {\n    this.API_BASE_URL = 'https://api.tvmaze.com/';\n    this.movies = [];\n  }\n\n  getMovieList = async (key) => {\n    let Query = `search/shows?q=${key}`;\n    const list = await fetch(`${this.API_BASE_URL}${Query}`).then((response) => response.json());\n    this.movies = [...this.movies, ...list];\n  }\n\n  displayMovies = async () => {\n    await this.getMovieList('action');\n    await this.getMovieList('comedy');\n    \n    const list = this.movies.reduce((prev, curr) => {\n      if(curr.show.image) {\n        prev += `<li><img src=${curr.show.image.medium} /></li>`;\n        return prev;\n      } \n    }, ''); \n    document.querySelector('movies-list').innerHTML = list;\n  }\n\n  \n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Movies);\n\n//# sourceURL=webpack://movies-rater/./src/modules/movies.js?");
+>>>>>>> feature-display-movies
 
 /***/ })
 

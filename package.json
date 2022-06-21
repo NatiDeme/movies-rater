@@ -29,6 +29,8 @@
   "homepage": "https://NatiDeme.github.io/movies-rater/",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.18.2",
+    "@babel/plugin-transform-regenerator": "^7.18.0",
+    "@babel/preset-env": "^7.18.2",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
     "eslint": "^7.32.0",

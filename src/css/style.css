@@ -1,4 +1,6 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -30,10 +32,6 @@ nav {
   gap: 2rem;
 }
 
-main {
-  height: 850px;
-}
-
 footer {
   display: flex;
   justify-content: center;
@@ -43,4 +41,50 @@ footer {
 
 #logo {
   height: 2.5rem;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mt-1 {
+  margin-top: 2em;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.btn {
+  padding: 5px;
+  width: 50%;
+}
+
+@media screen and (min-width: 767px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .movies-list .movie-item {
+    width: 20%;
+  }
 }
