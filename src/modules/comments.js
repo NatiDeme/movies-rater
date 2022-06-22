@@ -1,4 +1,7 @@
 import './movies.js';
+// eslint-disable-next-line import/no-cycle
+import addComment from './addComment.js';
+import listComment from './listComments..js';
 
 const comments = () => {
   const modal = document.getElementById('modal-wrap');
@@ -9,7 +12,7 @@ const comments = () => {
     country: '', genre: ['Comedy'], image: '', name: '', release: '', summary: '',
   }];
 
-  const displayDetails = () => {
+  const displayDetails = (id) => {
     projectModal.innerHTML = '';
     document.getElementById('modal').style.display = 'block';
     const projectCode = `
@@ -26,7 +29,7 @@ const comments = () => {
 />
 </div>
 <div class="modal-head">
-<div>${details.summary}</div>
+<div class=""summary>${details.summary}</div>
 </div>
 <div class="movie-attributes">
 <ul>
@@ -40,23 +43,24 @@ const comments = () => {
 </div>
 <div class="comment-display">
 <h2>Comments</h2>
-<ul>
-    <li>5/22/2022 Nati: Comments</li>
-    <li>5/22/2022 Comments</li>
-    <li>5/22/2022 Comments</li>
+<ul id="comments-section">
+    
 </ul>
 </div>
 <div class="add-comment">
                 <h2>Add Comments</h2>
                 <ul>
-                    <li><input type="text" name="" id="" placeholder="Your Name"></li>
-                    <li><textarea name="" id="" cols="30" rows="10" placeholder="Your insights"></textarea></li>
-                    <li><button>Comment</button></li>
+                    <li><input type="text" id="finput" placeholder="Your Name" required></li>
+                    <li><textarea cols="30" id="linput" rows="10" placeholder="Your insights" required></textarea></li>
+                    <li><button type="button" id="submit" onclick="submitValue(${id})">Comment</button></li>
                 </ul>
                 </div>
   `;
     projectModal.innerHTML += projectCode;
     modal.appendChild(projectModal);
+
+    addComment();
+    listComment(id);
   };
   const fillDetails = async (id) => {
     const list = await fetch(`${baseApi}${id}`).then((response) => response.json());
