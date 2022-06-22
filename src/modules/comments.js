@@ -2,6 +2,7 @@ import './movies.js';
 // eslint-disable-next-line import/no-cycle
 import addComment from './addComment.js';
 import listComment from './listComments..js';
+import commentCounter from './commentCounter.js';
 
 const comments = () => {
   const modal = document.getElementById('modal-wrap');
@@ -12,7 +13,12 @@ const comments = () => {
     country: '', genre: ['Comedy'], image: '', name: '', release: '', summary: '',
   }];
 
-  const displayDetails = (id) => {
+  const displayDetails = async (id) => {
+    const number = await commentCounter(id);
+    let num = 0;
+    if (number) {
+      num = number;
+    }
     projectModal.innerHTML = '';
     document.getElementById('modal').style.display = 'block';
     const projectCode = `
@@ -42,7 +48,7 @@ const comments = () => {
 </ul>
 </div>
 <div class="comment-display">
-<h2>Comments</h2>
+<h2>Comments(${num})</h2>
 <ul id="comments-section">
     
 </ul>
