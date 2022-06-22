@@ -127,7 +127,7 @@ ul {
   justify-content: end;
 }
 
-p {
+.summary p {
   font-size: 1rem;
   padding: 0 2rem;
 }
@@ -184,4 +184,9 @@ p {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.comment-items {
+  display: flex;
+  gap: 0.5rem;
 }
