@@ -57,7 +57,7 @@ class Movies {
               </div>
             </div>
             <div class="d-flex space-around mb-1">
-              <button class="btn" data-id=${curr.show.id}>Comments</button>
+              <button class="btn" data-id=${curr.show.id} id="${curr.show.id}" type="button" onclick="checkme(${curr.show.id})">Comments</button>
             </div>
           </div>
         </div>
