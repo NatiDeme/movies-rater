@@ -7,6 +7,7 @@ const listComment = (id) => {
     return result;
   };
   addToList().then((res) => {
+    commentsSection.innerHTML = '';
     if (res) {
       scoreArray = res;
       for (let i = 0; i < scoreArray.length; i += 1) {
