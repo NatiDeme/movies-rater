@@ -68,7 +68,7 @@ class Movies {
       return prev;
     }, '');
     document.querySelector('.movies-list').innerHTML = list;
-    document.querySelector('.title span').innerHTML = this.getMoviesCount();
+    document.querySelector('.title span').innerHTML = this.getMoviesCount(this.movies);
     HelperFuncs.registersLikeButtons(this);
   }
 }
