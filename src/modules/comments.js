@@ -2,7 +2,6 @@ import './movies.js';
 
 const comments = () => {
   const modal = document.getElementById('modal-wrap');
-  const supper = document.getElementById('btn');
   const projectModal = document.createElement('div');
   projectModal.className = 'modal-container';
   const baseApi = 'https://api.tvmaze.com/shows/';
@@ -10,7 +9,7 @@ const comments = () => {
     country: '', genre: ['Comedy'], image: '', name: '', release: '', summary: '',
   }];
 
-  const displayDetails = (id) => {
+  const displayDetails = () => {
     projectModal.innerHTML = '';
     document.getElementById('modal').style.display = 'block';
     const projectCode = `
@@ -42,9 +41,9 @@ const comments = () => {
 <div class="comment-display">
 <h2>Comments</h2>
 <ul>
-    <li>Comments</li>
-    <li>Comments</li>
-    <li>Comments</li>
+    <li>5/22/2022 Nati: Comments</li>
+    <li>5/22/2022 Comments</li>
+    <li>5/22/2022 Comments</li>
 </ul>
 </div>
 <div class="add-comment">

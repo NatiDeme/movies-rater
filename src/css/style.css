@@ -128,10 +128,6 @@ p {
   padding: 0 2rem;
 }
 
-.add-comment {
-  margin-bottom: 1rem;
-}
-
 .modal-image {
   display: flex;
   justify-content: center;
@@ -159,4 +155,29 @@ p {
 
 .movie-attributes span {
   font-weight: bold;
+}
+
+.comment-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.add-comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.add-comment ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
