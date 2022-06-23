@@ -25,6 +25,11 @@
   color: black;
 }
 
+.underline {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
 nav {
   display: flex;
   justify-content: center;
