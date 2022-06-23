@@ -50,7 +50,7 @@ const comments = () => {
 </ul>
 </div>
 <div class="comment-display">
-<h2>Comments(${num})</h2>
+<h2>Comments(<span id="count">${num}</span>)</h2>
 <ul id="comments-section">
     
 </ul>
