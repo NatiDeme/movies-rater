@@ -4,6 +4,8 @@
 
 > This is a website that allows users to like and post reviews of movies they have previously watched.
 
+[Application screenshot](src/asset/app_screenshot.png)
+
 
 ## Built With
 
@@ -46,14 +48,15 @@ Install all project dependencies by running the command below
   $ npm install
 ```
 ### Usage
-Start the http application server
+Start the webpack dev server
 ``` 
   $ npm start
 ```
-
-### Deployment
-- [Visit Application Homepage](http://localhost:8080)
-
+### Tests
+To run tests type the command below
+``` 
+  $ npm test
+```
 
 ### Authors
 
@@ -76,6 +79,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to [Microverse](https://bit.ly/MicroverseTN) for giving me this project to work on
+- Hat tip to [TV Maze](https://api.tvmaze.com/) for the movie API and pictures used in this project
+- Hat tip to [Microverse](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270) for the likes and comments API used in this project
 
 
 ## 📝 License
