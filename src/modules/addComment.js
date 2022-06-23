@@ -28,7 +28,6 @@ const addComment = () => {
       comment: insight.value,
     };
     addToApi(data, id);
-    // console.log(id);
   };
 };
 

@@ -6,11 +6,12 @@ import commentCounter from './commentCounter.js';
 
 const comments = () => {
   const modal = document.getElementById('modal-wrap');
+  const back = document.getElementById('test');
   const projectModal = document.createElement('div');
   projectModal.className = 'modal-container';
   const baseApi = 'https://api.tvmaze.com/shows/';
   const details = [{
-    country: '', genre: ['Comedy'], image: '', name: '', release: '', summary: '',
+    country: '', genre: [''], image: '', name: '', release: '', summary: '',
   }];
 
   const displayDetails = async (id) => {
@@ -21,6 +22,7 @@ const comments = () => {
     }
     projectModal.innerHTML = '';
     document.getElementById('modal').style.display = 'block';
+    back.style.filter = 'blur(.8rem)';
     const projectCode = `
 <div class="mclose-btn">
 <button onclick="modalClose()" id='close-modal' type="button">
@@ -35,7 +37,7 @@ const comments = () => {
 />
 </div>
 <div class="modal-head">
-<div class=""summary>${details.summary}</div>
+<div class="summary">${details.summary}</div>
 </div>
 <div class="movie-attributes">
 <ul>
@@ -92,6 +94,7 @@ const comments = () => {
 
   window.modalClose = function () {
     document.getElementById('modal').style.display = 'none';
+    back.style.filter = 'blur(0)';
   };
 };
 export default comments;
