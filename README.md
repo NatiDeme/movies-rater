@@ -4,7 +4,10 @@
 
 > This is a website that allows users to like and post reviews of movies they have previously watched.
 
-![Application screenshot](src/asset/app_screenshot.png)
+### Click on picture to watch a description about the project:
+
+[![Watch the video](https://github.com/NatiDeme/movies-rater/raw/dev/src/asset/app_screenshot.png)](https://drive.google.com/file/d/1q2dl1kTnER7d7y6gmUw30AkgIaxwPhw8/view?usp=sharing)
+
 
 
 ## Built With
