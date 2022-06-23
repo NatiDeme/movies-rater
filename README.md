@@ -4,7 +4,7 @@
 
 > This is a website that allows users to like and post reviews of movies they have previously watched.
 
-[Application screenshot](src/asset/app_screenshot.png)
+![Application screenshot](src/asset/app_screenshot.png)
 
 
 ## Built With
