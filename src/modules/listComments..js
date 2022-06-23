@@ -16,6 +16,7 @@ const listComment = (id) => {
       
                 `;
       }
+      document.getElementById('count').innerHTML = scoreArray.length > 0 ? `${scoreArray.length}` : '0';
     }
   });
 };
