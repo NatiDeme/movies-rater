@@ -51,7 +51,7 @@ class Movies {
             <div class="d-flex space-around mb-1">
              <img src=${curr.show.image.medium} />
             </div>
-            <div class="d-flex movie-content mb-1 space-evenly">
+            <div class="d-flex d-flex-xs movie-content mb-1 space-evenly">
               <span>${curr.show.name}</span>
               <div> 
                <i class="fa fa-heart fa-lg" data-pos=${curr.show.id}></i> 

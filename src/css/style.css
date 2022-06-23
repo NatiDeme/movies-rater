@@ -55,6 +55,12 @@ ul {
   flex-wrap: wrap;
 }
 
+.d-flex-xs {
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
 .mb-1 {
   margin-bottom: 1em;
 }
@@ -75,20 +81,21 @@ ul {
   justify-content: space-evenly;
 }
 
-.btn {
-  padding: 5px;
+.title {
+  padding: 10px;
+}
+
+.movies-list img {
+  width: 80%;
+}
+
+.movies-list .movie-item {
   width: 50%;
 }
 
-@media screen and (min-width: 767px) {
-  .container {
-    width: 90%;
-    margin: auto;
-  }
-
-  .movies-list .movie-item {
-    width: 20%;
-  }
+.btn {
+  padding: 5px;
+  width: 60%;
 }
 
 .card-modal {
@@ -189,4 +196,37 @@ ul {
 .comment-items {
   display: flex;
   gap: 0.5rem;
+}
+
+@media screen and (min-width: 767px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .movies-list .movie-item {
+    width: 33%;
+  }
+
+  .btn {
+    padding: 5px;
+    width: 60%;
+  }
+
+  .d-flex-xs {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .movies-list .movie-item {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .movies-list .movie-item {
+    width: 20%;
+  }
 }
