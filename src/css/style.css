@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --bgdark: #fafafa;
+  --green: #008080;
+}
+
+.header-list {
+  display: flex;
+  justify-items: center;
+  gap: 2.2rem;
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+.header-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.underline {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px grey;
+  height: 4rem;
+  gap: 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.2rem;
+  border-top: 1px solid black;
+}
+
+#logo {
+  height: 2.5rem;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.d-flex-xs {
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mt-1 {
+  margin-top: 2em;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.title {
+  padding: 10px;
+}
+
+.movies-list img {
+  width: 80%;
+}
+
+.movies-list .movie-item {
+  width: 50%;
+}
+
+.btn {
+  padding: 5px;
+  width: 60%;
+}
+
+.card-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-container {
+  width: 57.5rem;
+  height: auto;
+  background-color: white;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  border-radius: 8px;
+}
+
+.modal-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.mclose-btn button {
+  all: unset;
+}
+
+.mclose-btn {
+  padding: 16px;
+  display: flex;
+  justify-content: end;
+}
+
+.summary p {
+  font-size: 1rem;
+  padding: 0 2rem;
+}
+
+.modal-image {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#modal-cover {
+  height: 30rem;
+  width: 40rem;
+}
+
+.movie-attributes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.movie-attributes span {
+  font-weight: bold;
+}
+
+.comment-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.add-comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.add-comment ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.comment-items {
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    gap: 1rem;
+  }
+
+  .header-list {
+    display: flex;
+    justify-items: center;
+    gap: 1.8rem;
+    list-style: none;
+    font-size: 1rem;
+  }
+
+  .modal-container {
+    width: 23rem;
+    height: auto;
+    background-color: white;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border-radius: 8px;
+  }
+
+  #modal-cover {
+    height: 18rem;
+    width: 28rem;
+  }
+
+  .movie-attributes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .movies-list .movie-item {
+    width: 33%;
+  }
+
+  .btn {
+    padding: 5px;
+    width: 60%;
+  }
+
+  .d-flex-xs {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .modal-container {
+    width: 45rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 15rem;
+    box-shadow: 0 2px 10px grey;
+    height: 4rem;
+    gap: 2rem;
+  }
+
+  .header-list {
+    display: flex;
+    justify-items: center;
+    gap: 1.8rem;
+    list-style: none;
+    font-size: 1rem;
+  }
+
+  .modal-container {
+    width: 50rem;
+    height: auto;
+    background-color: white;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border-radius: 8px;
+  }
+
+  #modal-cover {
+    height: 25rem;
+    width: 35rem;
+  }
+
+  .movie-attributes {
+    font-size: 1rem;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .movies-list .movie-item {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .movies-list .movie-item {
+    width: 20%;
+  }
+
+  .modal-container {
+    width: 55rem;
+  }
+}
